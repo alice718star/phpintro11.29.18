@@ -20,32 +20,33 @@
             ];
         
         function sumof(){
-            global $n;
-            global $z;
-            if( $n =="james"){
-                $z = "james is in the house";
-            } else {
-                $z = "james is home sick";
+                global $n, $z;
+                if( $n == "james" ){
+                    $z = "james is in the house";
+                } else {
+                    $z = "james is home sick";
+                };
             };
-        };
         
         sumof();
         
-        
+       
+    
         ?>
         <h1>hello, <?php echo $n.' '.$f;?></h1>
         <h1><?php echo 'my name is '. $n.' '.$f; ?></h1>
-        <h1><?php print_r($a2); ?></h1>
+        <h1><?php print_r($a2);?></h1>
         <!--print_r is used for arrays-->
         <h1><?php echo $a3 ['age']; ?></h1>
+        <h1><?php echo $z ?></h1>
         <h1>
             <?php
                 foreach($a3 as $index => $value ){
                     echo $index.'<br>';
                 };
-            //single line comment
-            /*multi line comments
-            ?>
+         
+
+        ?>
             
             
         </h1>
