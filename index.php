@@ -4,6 +4,7 @@
         <title>php1</title>
     </head>
     <body>
+        <?php require_once('nav.php');?>
         <?php
             global $n, $z;
             $n = "jim";
